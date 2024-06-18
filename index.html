@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supertel Data Bundles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Supertel Data Bundles</h1>
+        <div class="actions">
+            <button class="action-btn">Help</button>
+            <button class="action-btn">contact us</button>
+            <button class="action-btn">Loan</button>
+            <button class="action-btn">more</button>
+        </div>
+        <div class="bundle-selector">
+            <h2>Choose a data bundle:</h2>
+            <div class="bundles">
+                <div class="bundle" data-bundle="1GB" data-amount="5">
+                    <h3>1GB</h3>
+                    <p>$5</p>
+                    <button class="select-bundle">Select</button>
+                </div>
+                <div class="bundle" data-bundle="5GB" data-amount="20">
+                    <h3>5GB</h3>
+                    <p>$20</p>
+                    <button class="select-bundle">Select</button>
+                </div>
+                <div class="bundle" data-bundle="10GB" data-amount="35">
+                    <h3>10GB</h3>
+                    <p>$35</p>
+                    <button class="select-bundle">Select</button>
+                </div>
+                <div class="bundle" data-bundle="20GB" data-amount="60">
+                    <h3>20GB</h3>
+                    <p>$60</p>
+                    <button class="select-bundle">Select</button>
+                </div>
+            </div>
+        </div>
+        <div class="payment-section" id="payment-section" style="display: none;">
+            <h2>Enter Payment Details</h2>
+            <label for="payment-method">Choose a payment method:</label>
+            <select id="payment-method">
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Mpesa">Mpesa</option>
+            </select>
+            <div id="payment-details" style="display: none;">
+                <label for="details">Enter your details:</label>
+                <input type="text" id="details" placeholder="Phone number, email or card number">
+            </div>
+            <button id="generateBtn">Generate</button>
+        </div>
+        <div class="output">
+            <h2>Summary:</h2>
+            <p id="result">None</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
